@@ -1,3 +1,4 @@
+
 package _01_else_if._5_own_adventure;
 
 import java.util.Random;
@@ -15,12 +16,12 @@ public class Adventure {
 		int babyNum = Integer.parseInt(baby);
 //starting life
 		if (babyNum == 1) {
-			String poorrich = JOptionPane.showInputDialog("Choose a number 132 or 192");
+			String poorrich = JOptionPane.showInputDialog("Choose a number 190 or 192");
 			Poorrich = Integer.parseInt(poorrich);
 			if (Poorrich == 192) {
 				JOptionPane.showMessageDialog(null, "You are in a poor family");
 			}
-			if (Poorrich == 132) {
+			if (Poorrich == 190) {
 				JOptionPane.showMessageDialog(null, "You are in a rich family");
 			}
 		}
@@ -29,23 +30,30 @@ public class Adventure {
 		JOptionPane.showMessageDialog(null, "Its time to take a quiz to see how smart you are!");
 
 		String smart = JOptionPane
-				.showInputDialog("What is 192 to the square root of 2, x ({126 +} 132) + |-10|(you have 50 seconds) ");
+				.showInputDialog("What is 192 to the square root of 2, x ({126 +} 190) + |-10|(you have 50 seconds) ");
 		int Smart = Integer.parseInt(smart);
 		if (Smart == 298) {
 			JOptionPane.showMessageDialog(null, ("Wow! You have 100 smart (the most)"));
+		}
+			
 			if (Smart != 298) {
 				JOptionPane.showMessageDialog(null, "Your Smart is" + o);
+			}
 				if (Poorrich == 192 && Smart == 298) {
 					JOptionPane.showMessageDialog(null,
 							"You helped your family grow a bussnis and you became very rich and a succesfull businessman/women");
+			}
+				
+				
+					
 					if (Poorrich == 192 && o > 50) {
 						JOptionPane.showMessageDialog(null,
 								"Your family turned into a normal family after hard work/n and you lived a happy life");
 					}
-				}
-			}
+				
+			
 
-		} else if (babyNum == 2 && o < 50) {
+		 else if (babyNum == 2 && o < 50) {
 			JOptionPane.showMessageDialog(null, "You lived your happy dumb life as a baby");
 			// school
 			String school1 = JOptionPane.showInputDialog(
@@ -100,7 +108,7 @@ public class Adventure {
 					}
 				}
 				// rich school
-				if (Poorrich == 132) {
+				if (Poorrich == 190) {
 					JOptionPane.showMessageDialog(null, "You lived a happy life as a baby");
 					String richlife = JOptionPane.showInputDialog(
 							"Would you like to have a happy ending here?(1) or continue the adventure(2)");
